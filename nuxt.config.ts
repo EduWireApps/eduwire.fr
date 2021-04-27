@@ -15,7 +15,9 @@ const config: NuxtConfig = {
   },
   plugins: [],
   // components: true,
-  components: [{ path: "~/components", pathPrefix: false }],
+  components: [
+    { path: "~/components", pathPrefix: false, extensions: ["vue"] }
+  ],
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",

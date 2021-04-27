@@ -1,37 +1,37 @@
 <template>
-  <component
-    :is="link ? (external ? 'a' : 'nuxt-link') : 'button'"
-    @click="!link ? $emit('click') : null"
-    :to="link ? url : null"
-    :href="link || external ? url : null"
-    :target="external || link ? '_blank' : null"
-    :rel="external || link ? 'noopener noreferrer' : null"
+  <ButtonBase
+    :link="link"
+    :url="url"
+    :external="external"
     :class="
-      `${variantClasses} ${sizeClasses} inline-flex items-center justify-center font-title border border-transparent transition-all tracking-wide focus:outline-none hover:shadow-lg shadow`
+      `${variantClasses} ${sizeClasses} ${
+        noShadow ? '' : 'hover:shadow-lg shadow'
+      } ${
+        noBorder ? '' : 'border'
+      } inline-flex items-center justify-center font-titlet border-transparent transition-all tracking-wide space-x-2`
     "
-  >
-    <slot />
-  </component>
+    ><slot
+  /></ButtonBase>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "nuxt-property-decorator";
+import { Component, Prop } from "nuxt-property-decorator";
+import ButtonMixin from "./mixin";
 
 const variants: Array<String> = ["primary", "secondary", "tertiary", "custom"];
 const sizes: Array<String> = ["large", "medium", "small", "custom"];
 
 @Component
-export default class Button extends Vue {
-  @Prop({ type: Boolean, default: false }) readonly link!: boolean;
+export default class Button extends ButtonMixin {
   @Prop({
     type: String,
     default: variants[0],
     validator: v => variants.includes(v)
   })
   readonly variant!: string;
-  @Prop({ type: String, default: "" }) readonly url!: string;
   @Prop({ type: String, default: sizes[1] }) readonly size!: string;
-  @Prop({ type: Boolean, default: false }) readonly external!: boolean;
+  @Prop({ type: Boolean, default: false }) readonly noShadow!: boolean;
+  @Prop({ type: Boolean, default: false }) readonly noBorder!: boolean;
 
   variants = variants;
   sizes = sizes;
@@ -41,7 +41,7 @@ export default class Button extends Vue {
       primary: "bg-primary-500 hover:bg-primary-400 text-white text-shadow-sm",
       secondary:
         "bg-secondary-500 hover:bg-secondary-400 text-white text-shadow-sm",
-      tertiary: "bg-white text-gray-700 border-gray-100",
+      tertiary: "bg-white text-gray-700 border-gray-100 hover:text-gray-600",
       custom: ""
     }[this.variant];
   }
@@ -56,5 +56,3 @@ export default class Button extends Vue {
   }
 }
 </script>
-
-<style></style>
