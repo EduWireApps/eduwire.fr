@@ -43,9 +43,10 @@ module.exports = {
         secondary: colors.teal
       },
       fontFamily: {
-        sans: ["Kanit", ...defaultTheme.fontFamily.sans]
+        sans: ["Nunito Sans", ...defaultTheme.fontFamily.sans],
+        title: ["Josefin Sans", ...defaultTheme.fontFamily.sans]
       }
     }
   },
-  plugins: []
+  plugins: [require("tailwindcss-textshadow")]
 };

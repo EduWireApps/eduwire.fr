@@ -27,6 +27,7 @@
     "@nuxtjs/tailwindcss": "^4.0.1",
     "@teamnovu/nuxt-breaky": "^1.2.2",
     "postcss": "^8.2.8",
-    "tailwindcss": "^2.1.1"
+    "tailwindcss": "^2.1.1",
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }
