@@ -1,6 +1,25 @@
 <template>
-  <div>
-    INDEX
+  <div class="text-6xl">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut, eos
+    sed dolor fugit saepe omnis quod aliquam! Ex, exercitationem. Cupiditate
+    aliquid illo consectetur totam quae sapiente expedita error harum maxime
+    molestias. Quae, placeat, nemo voluptatem veritatis recusandae aliquam dolor
+    eos quod aperiam harum consequuntur velit, neque alias nobis ut?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut, eos
+    sed dolor fugit saepe omnis quod aliquam! Ex, exercitationem. Cupiditate
+    aliquid illo consectetur totam quae sapiente expedita error harum maxime
+    molestias. Quae, placeat, nemo voluptatem veritatis recusandae aliquam dolor
+    eos quod aperiam harum consequuntur velit, neque alias nobis ut?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut, eos
+    sed dolor fugit saepe omnis quod aliquam! Ex, exercitationem. Cupiditate
+    aliquid illo consectetur totam quae sapiente expedita error harum maxime
+    molestias. Quae, placeat, nemo voluptatem veritatis recusandae aliquam dolor
+    eos quod aperiam harum consequuntur velit, neque alias nobis ut?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut, eos
+    sed dolor fugit saepe omnis quod aliquam! Ex, exercitationem. Cupiditate
+    aliquid illo consectetur totam quae sapiente expedita error harum maxime
+    molestias. Quae, placeat, nemo voluptatem veritatis recusandae aliquam dolor
+    eos quod aperiam harum consequuntur velit, neque alias nobis ut?
   </div>
 </template>
 

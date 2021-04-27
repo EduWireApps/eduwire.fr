@@ -14,18 +14,25 @@ const config: NuxtConfig = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   plugins: [],
-  components: true,
+  // components: true,
+  components: [{ path: "~/components", pathPrefix: false }],
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts"
   ],
   modules: [],
   tailwindcss: {
     exposeConfig: true,
     jit: true,
     viewer: false
+  },
+  googleFonts: {
+    families: {
+      Kanit: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    }
   }
 };
 
