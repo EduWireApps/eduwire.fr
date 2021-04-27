@@ -3,12 +3,13 @@
     :link="link"
     :url="url"
     :external="external"
+    v-on:click="$emit('click')"
     :class="
       `${variantClasses} ${sizeClasses} ${
         noShadow ? '' : 'hover:shadow-lg shadow'
       } ${
         noBorder ? '' : 'border'
-      } inline-flex items-center justify-center font-titlet border-transparent transition-all tracking-wide space-x-2`
+      } inline-flex items-center justify-center font-titlet border-transparent transition-all tracking-wide space-x-1.5`
     "
     ><slot
   /></ButtonBase>

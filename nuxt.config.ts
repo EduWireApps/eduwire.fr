@@ -1,6 +1,7 @@
 import { NuxtConfig } from "@nuxt/types";
 
 const config: NuxtConfig = {
+  ssr: false,
   head: {
     title: "nuxt-typescript-tailwindcss-template",
     htmlAttrs: {
@@ -13,7 +14,10 @@ const config: NuxtConfig = {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
-  plugins: [],
+  plugins: [
+    "~/plugins/v-click-outside.js"
+    // https://github.com/ndelvalle/v-click-outside
+  ],
   // components: true,
   components: [
     { path: "~/components", pathPrefix: false, extensions: ["vue"] }
