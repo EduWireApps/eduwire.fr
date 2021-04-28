@@ -2,7 +2,7 @@
   <div class="sticky top-0">
     <div class="bg-white shadow-md h-[66px]">
       <Container>
-        <div class="flex items-center justify-between px-6 py-3">
+        <div class="flex items-center justify-between py-3">
           <nuxt-link to="/">
             <div
               class="w-10 h-10 rounded-lg shadow bg-gradient-to-r from-primary-400 to-secondary-500"
