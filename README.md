@@ -1,5 +1,7 @@
 # nuxt-typescript-tailwindcss-template
 
+Official website of the eduwire.fr organization
+
 ## Build Setup
 
 ```bash
